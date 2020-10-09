@@ -42,7 +42,7 @@ def main():
             time.sleep(3)
             pass
 
-    print(f"The final answer is {round(old_num,2)}")
+    print(f"The final answer is {round(old_num, 2)}")
 
 
 def do_math(op, old_num, new_num):
@@ -65,7 +65,7 @@ def do_math(op, old_num, new_num):
         return None
 
 
-def assign_data(data: str):
+def assign_data(data):
     """
 
     :param data: str
