@@ -32,8 +32,8 @@ s.send(b'ready\n')
 ready = s.recv(2048)
 print(ready)
 checksum = ready[104:136]
-hex_checksum = checksum.encode('hex')
-print("checksum in hex: "+hex_checksum)
+hex_checksum = binascii.hexlify(checksum)
+print(f"checksum in hex: {hex_checksum}")
 
 while 1:
   s.send(b'final\n')
